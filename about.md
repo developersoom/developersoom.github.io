@@ -3,8 +3,7 @@ layout: page
 title: About
 ---
 
-Hello.
+💻 front-end developer  
+✉️ developer.soom@gmail.com
 
-This will be your About page. Anything about you, it should be written here in details. You may describe your bio here like who you are, what you do, your intention, social site hyperlinks and how people can contact you, etc.
-
-**Less is more..**
+**어제보다 오늘 더. 차근차근 수련하는 마음으로.**

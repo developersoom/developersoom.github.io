@@ -1,76 +1,45 @@
 # Site Info
-title: 숨의 페이지
-tagline: '숨의 페이지'
-description: '공부기록'
-baseurl: ""
-url: https://developersoom.github.io/
-logo: '/public/logo.png'
+title:              "숨의 블로그"
+description:        "TIL 쓰는 곳"
+author_name:        "Soom" # change this to your name
+logo_url:           https://avatars2.githubusercontent.com/u/40848630?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
 
-# Site configurations
-gems:
-  - jekyll-paginate
-markdown: kramdown
+# Site Settings
+url:                https://developersoom.github.io/ # main url
+baseurl:            
+permalink:          /:title # Post permalink
+timezone:           Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+mathjax:            true  # enables support for mathjax - set to 'false' to disable
+
+# Site Build
+highlighter:        rouge
+markdown:           kramdown
 kramdown:
-  input: GFM
-excerpt_separator: "<!-- more -->"
+    input:          GFM
 sass:
-  style: compressed
-  sass_dir: _scss
-paginate: 5
-paginate_path: '/blog/page:num'
-permalink: pretty
+    style:          :compressed
 
-version: 1.0.0
-
-# About/contact
-author:
-  name: SOOM
-  description: 숨! 프론트엔드 꿈나무! 
-  contact:
-    # linkedin:  
-    github: https://github.com/developersoom
-    # facebook: 
-    # twitter:   
-    # weibo:    
-    email:    mailto:developer.soom@gmail.com
-
-# Navigation (2nd level links supported)
-nav:
-  Home:
-    - '/blog/'
-  Categories:
-    - '/'
-    #- { Categories All: '/blog/categories/' }
-    - { TIL (Today I Learned): '/blog/categories/#til' }
-    - { algorithm : '/blog/categories/#algorithm' }
-    - { 필름 : '/blog/categories/#필름' }
-    #- { Django: '/blog/categories/#django' }
-    #- { python: '/blog/categories/#python' }
-    #- { javascript: '/blog/categories/#javascript' }
-    #- { nodejs: '/blog/categories/#nodejs' }
-    #- { MySQL: '/blog/categories/#MySQL' }
-    #- { git: '/blog/categories/#git' }
-    #- { firebase: '/blog/categories/#firebase' }
-    #- { etc: '/blog/categories/#etc' }
-    # - { Tags: '/blog/tags/' }
-  #About:
-   # - '/about/'
-  #Search:
-   # - '/search/'
+# Other Params
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script" ]
+plugins:
+  - jekyll-sitemap
 
 
 
-# Where are tags and categories displayed
-tag_page: '/blog/tags/'
-category_page: '/blog/categories/'
-
-
-# Puglins
-mathjax: true # whether support mathjax
-google_analytics_token: # leave blank if you don't want google analytics
-disqus_short_name:  # leave blank if you don't want disqus
-
-
-# Use the following plug-ins
-gems:
-  - jekyll-paginate
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"

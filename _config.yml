@@ -5,8 +5,8 @@ author_name:        "Soom" # change this to your name
 logo_url:           https://avatars2.githubusercontent.com/u/40848630?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
 
 # Site Settings
-url:                https://developersoom.github.io/ # main url
-baseurl:            
+url:                https://developersoom.github.io # main url
+# baseurl:            
 permalink:          /:title # Post permalink
 timezone:           Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 mathjax:            true  # enables support for mathjax - set to 'false' to disable

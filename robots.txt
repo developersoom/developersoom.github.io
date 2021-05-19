@@ -1,4 +1,8 @@
-User-agent: *
-Allow: /
+---
+layout: null
+---
 
-Sitemap: https://developersoom.github.io/sitemap.xml
+sitemap: {{ "/sitemap.xml" | prepend: site.baseurl | prepend: site.url }}
+
+user-agent: EmailCollector
+disallow: /

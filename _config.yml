@@ -1,14 +1,13 @@
 
-title: 숨의블로그 #Your awesome title
-email: developer.soom@gmail.com #youremail@domain.com
-description: > # this means to ignore newlines until "baseurl"
-숨의 블로그. 개발일지. 프론트엔드 개발자 블로그.
+title: "숨의블로그" #Your awesome title
+email: "developer.soom@gmail.com" #youremail@domain.com
+description: "TIL 쓰는 곳"
 
 baseurl: # the subpath of the site
 url: https://developersoom.github.io/ # the base hostname & protocol for your site
 
 permalink: /:year-:month/:title
-timezone:
+timezone: Asia/Seoul
 
 favicon: /assets/img/profile.png
 
